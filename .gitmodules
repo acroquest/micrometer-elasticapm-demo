@@ -1,0 +1,8 @@
+[submodule "spring-petclinic-rest"]
+	path = spring-petclinic-rest
+	url = https://github.com/acroquest/spring-petclinic-rest.git
+	branch = master
+[submodule "spring-petclinic-angular"]
+	path = spring-petclinic-angular
+	url = https://github.com/acroquest/spring-petclinic-angular.git
+	branch = master
