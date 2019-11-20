@@ -1,0 +1,12 @@
+FROM node:12-slim
+
+RUN export NG_CLI_ANALYTICS=false
+# RUN npm -g config set proxy "http://xxx.xxx.xxx.xxx:xxxx/"
+# RUN npm -g config set https-proxy "http://xxx.xxx.xxx.xxx:xxxx/"
+RUN npm -g config set noproxy localhost
+RUN npm install -g @angular/cli
+RUN npm update @angular/core
+RUN npm install -g @angular-devkit/build-angular
+RUN npm install -g @angular/compiler-cli
+RUN npm install -g typescript
+RUN npm install -g @angular/compiler
