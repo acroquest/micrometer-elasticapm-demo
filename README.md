@@ -1,4 +1,5 @@
 # Micrometer & Elastic APM Demo
+This is a demonstration of [Micrometer Kibana Dashboard](https://github.com/acroquest/micrometer-kibana-dashboard) and Elastic APM.
 
 ## Get repository and submodules.
 ```
