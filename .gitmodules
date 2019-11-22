@@ -6,3 +6,7 @@
 	path = spring-petclinic-angular
 	url = https://github.com/acroquest/spring-petclinic-angular.git
 	branch = master
+[submodule "micrometer-kibana-dashboard"]
+	path = micrometer-kibana-dashboard
+	url = https://github.com/acroquest/micrometer-kibana-dashboard.git
+	branch = master

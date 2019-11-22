@@ -32,15 +32,18 @@ docker-compose -f docker-compose-elastic.yml up -d
 ## Setup Kibana Dashboards
 Run Kibana Dashboard setup script after Kibana started.
 ```
-./setup.sh
+cd ../micrometer-kibana-dashboard
+./kibana_setup.sh
 ```
 for Windows:
 ```
-setup.bat
+cd ../micrometer-kibana-dashboard
+kibana_setup.bat
 ```
 
 ## Run applications
 Run sample applications using docker-compose-application.yml
 ```
-  docker-compose -f docker-compose-application.yml up -d
+cd ../demo
+docker-compose -f docker-compose-application.yml up -d
 ```
