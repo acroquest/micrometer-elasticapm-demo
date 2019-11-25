@@ -3,6 +3,8 @@ This is a demonstration of [Micrometer Kibana Dashboard](https://github.com/acro
 
 ![Demo](https://github.com/acroquest/micrometer-elasticapm-demo/blob/media/Demo.gif)
 
+# Installation
+
 ## Get repository and submodules.
 ```
 git clone https://github.com/acroquest/micrometer-elasticapm-demo.git
@@ -49,4 +51,40 @@ Run sample applications using docker-compose-application.yml
 ```
 cd ../demo
 docker-compose -f docker-compose-application.yml up -d
+```
+
+# Stop Elastic Stack and Applicaions
+
+## Stop applications.
+```
+docker-compose -f docker-compose-application.yml stop
+```
+
+## Stop Elastic Stack.
+```
+docker-compose -f docker-compose-elastic.yml stop
+```
+
+# Restart Elastic Stack and Applications
+
+## Restart Elastic Stack.
+```
+docker-compose -f docker-compose-elastic.yml start
+```
+
+## Restart applications.
+```
+docker-compose -f docker-compose-application.yml start
+```
+
+# Stop and remove Elastic Stack and Applications
+
+## Down applications.
+```
+docker-compose -f docker-compose-application.yml down
+```
+
+## Down Elastic Stack.
+```
+docker-compose -f docker-compose-elastic.yml down
 ```
