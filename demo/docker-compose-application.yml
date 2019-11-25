@@ -9,7 +9,7 @@ services:
       - ../spring-petclinic-rest:/app
       - ./log:/var/log/demo
     working_dir: /app
-    command: ./mvnw clean spring-boot:run
+    command: ./mvnw spring-boot:run
     networks:
       - demo_default
   appangular:
