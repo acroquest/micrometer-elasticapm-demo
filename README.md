@@ -46,10 +46,16 @@ cd ../micrometer-kibana-dashboard
 kibana_setup.bat
 ```
 
+## Build Application
+Build angular application using docker-compose-application_build.yml
+```
+cd ../demo
+docker-compose -f docker-compose-application_build.yml up
+```
+
 ## Run applications
 Run sample applications using docker-compose-application.yml
 ```
-cd ../demo
 docker-compose -f docker-compose-application.yml up -d
 ```
 

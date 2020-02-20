@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  appangular_build:
+    build:
+      context: .
+      dockerfile: Dockerfile_angular
+    volumes:
+      - ../spring-petclinic-angular:/app
+    working_dir: /app
+    command: bash -c "npm link && ng build"
